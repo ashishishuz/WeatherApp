@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.form {
+    position: relative;
+    max-width: 450px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 32px;
+    backdrop-filter: blur(32px);
+    margin-bottom: 8px;
+}
+
+.animate-shake {
+    animation: shake 0.5s infinite alternate;
+}
+
+@keyframes shake {
+    from {
+        transform: translateX(-5px);
+    }
+    to {
+        transform: translateX(5px);
+    }
+}
+.error-message {
+    background-color: #ffcccc;
+    color: #000000; 
+    padding: 15px 20px; 
+    border-radius: 8px; 
+    margin-bottom: 20px; 
+    font-size: 16px;
+    border: 1px solid #15bfe1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    display: flex; 
+    align-items: center; 
+}
